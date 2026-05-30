@@ -34,15 +34,15 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 26px 34px;
-  background: rgba(244, 242, 236, 0.88);
+  padding: 24px 34px;
+  background: rgba(244, 242, 236, 0.92);
   backdrop-filter: blur(12px);
 }
 
 .brand {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 22px;
-  letter-spacing: -0.03em;
+  font-size: 24px;
+  letter-spacing: -0.04em;
 }
 
 nav {
@@ -52,32 +52,35 @@ nav {
   letter-spacing: 0.04em;
 }
 
-nav a:hover {
+nav a:hover,
+footer a:hover {
   opacity: 0.55;
 }
 
-/* Landing */
+/* Home */
 
-.landing {
+.home-landing {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
-  padding-top: 82px;
+  padding-top: 78px;
 }
 
-.self-image {
-  height: calc(100vh - 82px);
+.home-photo {
+  height: calc(100vh - 78px);
   overflow: hidden;
 }
 
-.self-image img {
+.home-photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.intro {
+.home-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 620px;
   margin: 0 auto;
   padding: 60px;
@@ -93,21 +96,22 @@ nav a:hover {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   font-family: Georgia, "Times New Roman", serif;
   font-weight: 400;
 }
 
 h1 {
   margin: 0;
-  font-size: clamp(52px, 6vw, 94px);
+  font-size: clamp(54px, 7vw, 104px);
   line-height: 0.95;
-  letter-spacing: -0.055em;
+  letter-spacing: -0.06em;
 }
 
-.intro-text {
-  max-width: 420px;
+.home-intro p:not(.small-label),
+.portfolio-landing p,
+.category-landing p {
+  max-width: 460px;
   margin: 26px auto 36px;
   color: #504c46;
   line-height: 1.7;
@@ -116,6 +120,8 @@ h1 {
 
 .button-link {
   display: inline-block;
+  width: fit-content;
+  margin: 0 auto;
   padding: 14px 28px;
   border: 1px solid #1d1b18;
   border-radius: 999px;
@@ -130,36 +136,35 @@ h1 {
   color: #f4f2ec;
 }
 
-/* General Sections */
+/* Pages */
 
-.portfolio,
-.work-section,
-.about,
-.contact {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 110px 34px;
+.page {
+  padding-top: 78px;
 }
 
-.section-title,
-.work-heading {
+.portfolio-landing,
+.category-landing {
+  min-height: 54vh;
+  display: grid;
+  place-items: center;
   text-align: center;
-  margin-bottom: 48px;
+  padding: 90px 34px 60px;
 }
 
-h2 {
-  margin: 0;
-  font-size: clamp(42px, 5vw, 78px);
-  line-height: 1;
-  letter-spacing: -0.055em;
+.portfolio-landing h1,
+.category-landing h1 {
+  font-size: clamp(54px, 7vw, 110px);
 }
 
-/* Category Grid */
+/* Portfolio category lobby */
 
 .category-grid {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 34px 110px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 22px;
+  gap: 28px;
 }
 
 .category-card {
@@ -168,19 +173,18 @@ h2 {
 
 .category-card img {
   width: 100%;
-  height: 390px;
+  height: 380px;
   object-fit: cover;
-  filter: saturate(0.88);
-  transition: opacity 220ms ease;
+  transition: opacity 200ms ease;
 }
 
 .category-card:hover img {
   opacity: 0.82;
 }
 
-.category-card h3 {
+.category-card h2 {
   margin: 18px 0 6px;
-  font-size: 32px;
+  font-size: 34px;
   line-height: 1;
   letter-spacing: -0.04em;
 }
@@ -189,51 +193,23 @@ h2 {
   margin: 0;
   color: #68635c;
   font-size: 14px;
+  line-height: 1.5;
 }
 
-/* Photo Sections */
+/* Individual category pages */
 
 .photo-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 34px 110px;
+  columns: 3 280px;
+  column-gap: 18px;
 }
 
 .photo-grid img {
   width: 100%;
-  height: 520px;
-  object-fit: cover;
-}
-
-/* About / Contact */
-
-.about,
-.contact {
-  max-width: 860px;
-}
-
-.about h2,
-.contact h2 {
-  margin-bottom: 26px;
-}
-
-.about p,
-.contact p,
-footer p {
-  color: #504c46;
-  line-height: 1.75;
-  font-size: 16px;
-}
-
-.contact-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
-.contact-links a {
-  border-bottom: 1px solid currentColor;
-  padding-bottom: 4px;
+  margin-bottom: 18px;
+  break-inside: avoid;
 }
 
 footer {
@@ -241,48 +217,58 @@ footer {
   text-align: center;
 }
 
+footer p {
+  margin: 0;
+  color: #504c46;
+  font-size: 14px;
+}
+
 /* Mobile */
 
 @media (max-width: 850px) {
   .site-header {
-    padding: 22px;
+    padding: 20px 22px;
     align-items: flex-start;
   }
 
   nav {
-    max-width: 210px;
+    max-width: 220px;
     flex-wrap: wrap;
     justify-content: flex-end;
     gap: 12px 16px;
     font-size: 12px;
   }
 
-  .landing {
+  .home-landing {
     grid-template-columns: 1fr;
-    padding-top: 82px;
+    padding-top: 78px;
   }
 
-  .self-image {
+  .home-photo {
     height: 56vh;
   }
 
-  .intro {
+  .home-intro {
     padding: 58px 24px 72px;
   }
 
-  .category-grid,
-  .photo-grid {
-    grid-template-columns: 1fr;
+  .portfolio-landing,
+  .category-landing {
+    min-height: 44vh;
+    padding: 90px 24px 50px;
   }
 
-  .photo-grid img {
+  .category-grid {
+    grid-template-columns: 1fr;
+    padding: 0 24px 82px;
+  }
+
+  .category-card img {
     height: auto;
   }
 
-  .portfolio,
-  .work-section,
-  .about,
-  .contact {
-    padding: 82px 24px;
+  .photo-grid {
+    padding: 0 24px 82px;
+    columns: 1;
   }
 }
