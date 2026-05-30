@@ -4,24 +4,89 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jason Yeh Studio</title>
+  <meta name="description" content="Photography portfolio of Jason Yeh." />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <header>
-    <h1>Jason Yeh Studio</h1>
-    <p>Photography by Jason Yeh</p>
+  <header class="site-header">
+    <a class="logo" href="#">Jason Yeh Studio</a>
+
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <main class="gallery">
-    <img src="images/photo1.jpg" alt="Graduation portrait by Jason Yeh" />
-    <img src="images/photo2.jpg" alt="Portrait photography by Jason Yeh" />
-    <img src="images/photo3.jpg" alt="Editorial photography by Jason Yeh" />
-    <img src="images/photo4.jpg" alt="Editorial photography by Jason Yeh" />
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Photography</p>
+      <h1>Portraits, graduation work, and visual studies.</h1>
+      <p class="hero-text">
+        Photography by Jason Yeh. Based in Amherst and Las Vegas.
+      </p>
+    </section>
+
+    <section id="work" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Selected Work</p>
+        <h2>Recent photographs</h2>
+      </div>
+
+      <div class="gallery">
+        <img src="images/photo1.jpg" alt="Photography by Jason Yeh" />
+        <img src="images/photo2.jpg" alt="Photography by Jason Yeh" />
+        <img src="images/photo3.jpg" alt="Photography by Jason Yeh" />
+        <img src="images/photo4.jpg" alt="Photography by Jason Yeh" />
+        <img src="images/photo5.jpg" alt="Photography by Jason Yeh" />
+        <img src="images/photo6.jpg" alt="Photography by Jason Yeh" />
+      </div>
+    </section>
+
+    <section class="categories">
+      <article>
+        <h3>Graduation</h3>
+        <p>Clean, polished portraits for senior sessions and campus milestones.</p>
+      </article>
+
+      <article>
+        <h3>Portraits</h3>
+        <p>Individual-focused photography with attention to light, shape, and setting.</p>
+      </article>
+
+      <article>
+        <h3>Personal Work</h3>
+        <p>Color studies, pairings, and quieter visual observations.</p>
+      </article>
+    </section>
+
+    <section id="about" class="section about">
+      <p class="eyebrow">About</p>
+      <h2>Jason Yeh is a photographer working across portraits, graduation photography, and personal visual projects.</h2>
+      <p>
+        Currently based around Amherst College, with work shaped by clean composition,
+        natural light, restrained color, and a preference for images that feel crisp
+        without becoming overproduced.
+      </p>
+    </section>
+
+    <section id="contact" class="section contact">
+      <p class="eyebrow">Contact</p>
+      <h2>For portraits, graduation sessions, or creative work:</h2>
+      <p>
+        <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a>
+      </p>
+      <p>
+        <a href="https://instagram.com/YOUR_HANDLE_HERE" target="_blank" rel="noopener">
+          Instagram
+        </a>
+      </p>
+    </section>
   </main>
 
   <footer>
-    <p>Contact: your-email@example.com</p>
-    <p>Instagram: @yourhandle</p>
+    <p>© 2026 Jason Yeh Studio</p>
   </footer>
 </body>
 </html>
