@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Jason Yeh Studio</title>
   <meta name="description" content="Photography portfolio of Jason Yeh." />
+
+  <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" href="leaf.png" />
 </head>
 
 <body>
@@ -14,75 +16,176 @@
     <a class="logo" href="#">Jason Yeh Studio</a>
 
     <nav>
-      <a href="#work">Work</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#selected">Selected</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
+      <a href="https://instagram.com/nnyeh22" target="_blank" rel="noopener">Instagram</a>
     </nav>
   </header>
 
   <main>
+    <!-- HERO -->
     <section class="hero">
-      <p class="eyebrow">Photography</p>
-      <h1>Portraits, graduation work, and visual studies.</h1>
-      <p class="hero-text">
-        Photography by Jason Yeh. Based in Amherst and Las Vegas.
-      </p>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">Photography</p>
+        <h1>Portraits, moments, and quiet visual studies.</h1>
+        <p class="subtitle">Photography by Jason Yeh. Based in Amherst and Las Vegas.</p>
+        <a class="enter-link" href="#portfolio">Enter Portfolio</a>
+      </div>
     </section>
 
-    <section id="work" class="section">
+    <!-- PORTFOLIO CATEGORIES -->
+    <section id="portfolio" class="portfolio-section">
       <div class="section-heading">
-        <p class="eyebrow">Selected Work</p>
+        <p class="eyebrow dark">Portfolio</p>
+        <h2>Work</h2>
+      </div>
+
+      <div class="category-grid">
+        <a class="category-card large" href="#portraits">
+          <img src="images/portraits-cover.jpg" alt="Portrait photography by Jason Yeh" />
+          <div class="category-overlay"></div>
+          <div class="category-text">
+            <span>01</span>
+            <h3>Portraits</h3>
+            <p>Editorial, casual, and individual-focused work</p>
+          </div>
+        </a>
+
+        <a class="category-card" href="#graduation">
+          <img src="images/graduation-cover.jpg" alt="Graduation photography by Jason Yeh" />
+          <div class="category-overlay"></div>
+          <div class="category-text">
+            <span>02</span>
+            <h3>Graduation</h3>
+            <p>Campus milestones and senior portraits</p>
+          </div>
+        </a>
+
+        <a class="category-card" href="#studies">
+          <img src="images/studies-cover.jpg" alt="Visual studies by Jason Yeh" />
+          <div class="category-overlay"></div>
+          <div class="category-text">
+            <span>03</span>
+            <h3>Studies</h3>
+            <p>Color, nature, flowers, landscapes, and spaces</p>
+          </div>
+        </a>
+
+        <a class="category-card" href="#action">
+          <img src="images/action-cover.jpg" alt="Action photography by Jason Yeh" />
+          <div class="category-overlay"></div>
+          <div class="category-text">
+            <span>04</span>
+            <h3>Action</h3>
+            <p>Sports, movement, and outdoor moments</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK -->
+    <section id="selected" class="selected-section">
+      <div class="section-heading">
+        <p class="eyebrow dark">Selected Work</p>
         <h2>Recent photographs</h2>
       </div>
 
-      <div class="gallery">
-        <img src="images/photo1.jpg" alt="Photography by Jason Yeh" />
-        <img src="images/photo2.jpg" alt="Photography by Jason Yeh" />
-        <img src="images/photo3.jpg" alt="Photography by Jason Yeh" />
-        <img src="images/photo4.jpg" alt="Photography by Jason Yeh" />
-        <img src="images/photo5.jpg" alt="Photography by Jason Yeh" />
-        <img src="images/photo6.jpg" alt="Photography by Jason Yeh" />
+      <div class="masonry-gallery">
+        <img src="images/portrait-01.jpg" alt="Portrait photography by Jason Yeh" />
+        <img src="images/grad-01.jpg" alt="Graduation photography by Jason Yeh" />
+        <img src="images/study-01.jpg" alt="Visual study by Jason Yeh" />
+        <img src="images/action-01.jpg" alt="Action photography by Jason Yeh" />
+        <img src="images/portrait-02.jpg" alt="Portrait photography by Jason Yeh" />
+        <img src="images/grad-02.jpg" alt="Graduation photography by Jason Yeh" />
+        <img src="images/study-02.jpg" alt="Visual study by Jason Yeh" />
+        <img src="images/action-02.jpg" alt="Action photography by Jason Yeh" />
       </div>
     </section>
 
-    <section class="categories">
-      <article>
-        <h3>Graduation</h3>
-        <p>Clean, polished portraits for senior sessions and campus milestones.</p>
-      </article>
+    <!-- PORTRAITS -->
+    <section id="portraits" class="work-section">
+      <div class="work-intro">
+        <p class="eyebrow dark">01 / Portraits</p>
+        <h2>Portraits</h2>
+        <p>People-focused work shaped by light, setting, posture, and expression.</p>
+      </div>
 
-      <article>
-        <h3>Portraits</h3>
-        <p>Individual-focused photography with attention to light, shape, and setting.</p>
-      </article>
-
-      <article>
-        <h3>Personal Work</h3>
-        <p>Color studies, pairings, and quieter visual observations.</p>
-      </article>
+      <div class="clean-gallery">
+        <img src="images/portrait-01.jpg" alt="Portrait photography by Jason Yeh" />
+        <img src="images/portrait-02.jpg" alt="Portrait photography by Jason Yeh" />
+        <img src="images/portrait-03.jpg" alt="Portrait photography by Jason Yeh" />
+      </div>
     </section>
 
-    <section id="about" class="section about">
-      <p class="eyebrow">About</p>
-      <h2>Jason Yeh is a photographer working across portraits, graduation photography, and personal visual projects.</h2>
+    <!-- GRADUATION -->
+    <section id="graduation" class="work-section">
+      <div class="work-intro">
+        <p class="eyebrow dark">02 / Graduation</p>
+        <h2>Graduation</h2>
+        <p>Senior portraits, campus landmarks, and milestone sessions.</p>
+      </div>
+
+      <div class="clean-gallery">
+        <img src="images/grad-01.jpg" alt="Graduation photography by Jason Yeh" />
+        <img src="images/grad-02.jpg" alt="Graduation photography by Jason Yeh" />
+        <img src="images/grad-03.jpg" alt="Graduation photography by Jason Yeh" />
+      </div>
+    </section>
+
+    <!-- STUDIES -->
+    <section id="studies" class="work-section">
+      <div class="work-intro">
+        <p class="eyebrow dark">03 / Studies</p>
+        <h2>Studies</h2>
+        <p>Color, flowers, nature, landscapes, architecture, and quieter visual observations.</p>
+      </div>
+
+      <div class="clean-gallery">
+        <img src="images/study-01.jpg" alt="Visual study by Jason Yeh" />
+        <img src="images/study-02.jpg" alt="Visual study by Jason Yeh" />
+        <img src="images/study-03.jpg" alt="Visual study by Jason Yeh" />
+      </div>
+    </section>
+
+    <!-- ACTION -->
+    <section id="action" class="work-section">
+      <div class="work-intro">
+        <p class="eyebrow dark">04 / Action</p>
+        <h2>Action</h2>
+        <p>Movement, sports, snow, court, and outdoor moments.</p>
+      </div>
+
+      <div class="clean-gallery">
+        <img src="images/action-01.jpg" alt="Action photography by Jason Yeh" />
+        <img src="images/action-02.jpg" alt="Action photography by Jason Yeh" />
+        <img src="images/action-03.jpg" alt="Action photography by Jason Yeh" />
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about-section">
+      <p class="eyebrow dark">About</p>
+      <h2>Jason Yeh is a photographer working across portraits, graduation sessions, studies, and movement-based imagery.</h2>
       <p>
-        Currently based around Amherst College, with work shaped by clean composition,
-        natural light, restrained color, and a preference for images that feel crisp
+        Based around Amherst College and Las Vegas, my work is shaped by clean composition,
+        restrained color, natural light, and a preference for photographs that feel crisp
         without becoming overproduced.
       </p>
     </section>
 
-    <section id="contact" class="section contact">
-      <p class="eyebrow">Contact</p>
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+      <p class="eyebrow dark">Contact</p>
       <h2>For portraits, graduation sessions, or creative work:</h2>
-      <p>
-        <a href="mailto:jasonyehlv@gmail.com">jasonyehlv@gmail.com</a>
-      </p>
-      <p>
-        <a href="https://instagram.com/jasonyeh.jpg" target="_blank" rel="noopener">
-          Instagram
-        </a>
-      </p>
+
+      <div class="contact-links">
+        <a href="mailto:nnyeh22@gmail.com">nnyeh22@gmail.com</a>
+        <a href="https://instagram.com/nnyeh22" target="_blank" rel="noopener">@nnyeh22</a>
+      </div>
     </section>
   </main>
 
