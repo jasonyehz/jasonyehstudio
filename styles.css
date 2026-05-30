@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  background: #f7f7f4;
+  color: #111;
+}
+
+header {
+  padding: 64px 24px 40px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+p {
+  color: #555;
+}
+
+.gallery {
+  columns: 3 280px;
+  column-gap: 16px;
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery img {
+  width: 100%;
+  margin-bottom: 16px;
+  display: block;
+}
+
+footer {
+  padding: 48px 24px;
+  text-align: center;
+}
