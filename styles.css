@@ -151,14 +151,16 @@ h1 {
   max-width: 1480px;
   margin: 0 auto;
 
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 26px;
 }
 
 .tile {
   position: relative;
-  height: 430px;
+  width: 440px;
+  height: 300px;
   overflow: hidden;
   background: #ddd;
 }
@@ -191,7 +193,7 @@ h1 {
   place-items: center;
 
   color: #f8f5ed;
-  font-size: clamp(38px, 4vw, 64px);
+  font-size: clamp(30px, 3vw, 50px);
   letter-spacing: -0.04em;
   text-shadow: 0 2px 24px rgba(0, 0, 0, 0.28);
 
