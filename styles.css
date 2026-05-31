@@ -148,17 +148,17 @@ h1 {
 }
 
 .portfolio-grid {
-  max-width: 1480px;
+  max-width: 1500px;
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 26px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
 }
 
 .tile {
   position: relative;
-  aspect-ratio: 3 / 2;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   background: #ddd;
 }
@@ -191,8 +191,8 @@ h1 {
   place-items: center;
 
   color: #f8f5ed;
-  font-size: clamp(28px, 2.5vw, 44px);
-  letter-spacing: -0.0035em;
+  font-size: clamp(28px, 2.5vw, 46px);
+  letter-spacing: -0.035em;
   text-shadow: 0 2px 24px rgba(0, 0, 0, 0.28);
 
   transition: transform 350ms ease, text-shadow 350ms ease;
@@ -408,13 +408,13 @@ h1 {
   }
 
   .portfolio-grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
-  }
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
 
-  .tile {
+.tile {
   aspect-ratio: 3 / 2;
-  }
+}
 
   .gallery-page {
     padding-top: 96px;
