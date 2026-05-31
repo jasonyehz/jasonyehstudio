@@ -206,11 +206,21 @@ h1 {
   font-size: clamp(38px, 4vw, 64px);
   letter-spacing: -0.04em;
   text-shadow: 0 2px 24px rgba(0, 0, 0, 0.28);
-}
 
+  transition: transform 350ms ease, text-shadow 350ms ease;
+}
 .tile:hover img {
   transform: scale(1.025);
-  filter: brightness(0.94);
+  filter: brightness(1);
+}
+
+.tile:hover .haze {
+  opacity: 0;
+}
+
+.tile:hover h3 {
+  transform: scale(1.08);
+  text-shadow: 0 3px 28px rgba(0, 0, 0, 0.38);
 }
 
 /* Contact section */
