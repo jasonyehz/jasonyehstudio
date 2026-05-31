@@ -151,16 +151,14 @@ h1 {
   max-width: 1480px;
   margin: 0 auto;
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 26px;
 }
 
 .tile {
   position: relative;
-  width: 440px;
-  height: 300px;
+  aspect-ratio: 3 / 2;
   overflow: hidden;
   background: #ddd;
 }
@@ -412,8 +410,7 @@ h1 {
   }
 
   .tile {
-  width: 100%;
-  height: 300px;
+  aspect-ratio: 3 / 2;
   }
 
   .gallery-page {
