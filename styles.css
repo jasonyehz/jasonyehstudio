@@ -431,4 +431,81 @@ h1 {
     margin: 0;
     font-size: 14px;
   }
+
+  /* FINAL portfolio tile layout override */
+
+.portfolio-grid {
+  width: min(92vw, 1800px) !important;
+  max-width: none !important;
+  margin: 0 auto !important;
+
+  display: grid !important;
+  grid-template-columns: repeat(6, 1fr) !important;
+  gap: 28px !important;
+}
+
+/* 3 tiles per row: each tile takes 2/6 columns */
+.portfolio-grid .tile {
+  grid-column: span 2 !important;
+  width: auto !important;
+  height: auto !important;
+  aspect-ratio: 4 / 3 !important;
+
+  position: relative;
+  overflow: hidden;
+  background: #ddd;
+}
+
+/* Center the last row of 2 tiles */
+.portfolio-grid .tile:nth-child(4) {
+  grid-column: 2 / span 2 !important;
+}
+
+.portfolio-grid .tile:nth-child(5) {
+  grid-column: 4 / span 2 !important;
+}
+
+.tile img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* Crop adjustment for volleyball/motion tile */
+.motion-cover {
+  object-position: center 25% !important;
+}
+
+/* Slightly smaller tile text */
+.tile h3 {
+  font-size: clamp(28px, 2.4vw, 44px) !important;
+}
+
+/* Medium screens: 2 per row */
+@media (max-width: 1100px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .portfolio-grid .tile,
+  .portfolio-grid .tile:nth-child(4),
+  .portfolio-grid .tile:nth-child(5) {
+    grid-column: auto !important;
+  }
+}
+
+/* Mobile: 1 per row */
+@media (max-width: 700px) {
+  .portfolio-grid {
+    width: calc(100vw - 44px) !important;
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+
+  .portfolio-grid .tile,
+  .portfolio-grid .tile:nth-child(4),
+  .portfolio-grid .tile:nth-child(5) {
+    grid-column: auto !important;
+  }
+}
 }
