@@ -192,6 +192,7 @@ h1 {
       rgba(20, 18, 15, 0.30)
     ),
     rgba(20, 18, 15, 0.14);
+  transition: opacity 350ms ease;
 }
 
 .tile h3 {
