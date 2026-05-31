@@ -159,8 +159,8 @@ h1 {
 
 .tile {
   position: relative;
-  width: 500px;
-  height: 340px;
+  width: 440px;
+  height: 300px;
   overflow: hidden;
   background: #ddd;
 }
