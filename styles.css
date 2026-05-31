@@ -58,7 +58,6 @@ nav {
 
 nav a:hover,
 .contact-links a:hover,
-footer a:hover,
 .page-arrows a:hover {
   opacity: 0.55;
 }
@@ -99,14 +98,6 @@ footer a:hover,
   padding: 40px;
 }
 
-.label {
-  margin: 0 0 20px;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  color: #6f6a63;
-}
-
 h1,
 h2,
 h3 {
@@ -133,7 +124,7 @@ h1 {
 
 .portfolio-section {
   min-height: 100vh;
-  padding: 42px 34px 90px;
+  padding: 42px 5vw 110px;
 }
 
 .portfolio-title {
@@ -148,17 +139,17 @@ h1 {
 }
 
 .portfolio-grid {
-  max-width: 1500px;
+  width: min(100%, 1500px);
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 28px;
 }
 
 .tile {
   position: relative;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   background: #ddd;
 }
@@ -168,6 +159,11 @@ h1 {
   height: 100%;
   object-fit: cover;
   transition: transform 700ms ease, filter 700ms ease;
+}
+
+/* Adjusts the volleyball image crop upward */
+.motion-cover {
+  object-position: center 25%;
 }
 
 .haze {
@@ -191,7 +187,7 @@ h1 {
   place-items: center;
 
   color: #f8f5ed;
-  font-size: clamp(28px, 2.5vw, 46px);
+  font-size: clamp(26px, 2.3vw, 42px);
   letter-spacing: -0.035em;
   text-shadow: 0 2px 24px rgba(0, 0, 0, 0.28);
 
@@ -327,41 +323,12 @@ h1 {
   opacity: 0.55;
 }
 
-/* Footer */
+/* Medium screens */
 
-.site-footer {
-  min-height: 120px;
-  padding: 36px 46px;
-  background: #e8e2d6;
-
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  gap: 32px;
-}
-
-.site-footer p {
-  margin: 0;
-  color: #504c46;
-  font-size: 14px;
-}
-
-.footer-links {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 8px;
-}
-
-.footer-links a {
-  color: #171717;
-  border-bottom: 1px solid currentColor;
-  padding-bottom: 3px;
-  font-size: 14px;
-}
-
-.footer-links a:hover {
-  opacity: 0.55;
+@media (max-width: 1100px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 /* Mobile */
@@ -400,7 +367,7 @@ h1 {
   }
 
   .portfolio-section {
-    padding: 34px 22px 64px;
+    padding: 34px 22px 80px;
   }
 
   .portfolio-title {
@@ -408,13 +375,17 @@ h1 {
   }
 
   .portfolio-grid {
-  grid-template-columns: 1fr;
-  gap: 18px;
-}
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
 
-.tile {
-  aspect-ratio: 3 / 2;
-}
+  .tile {
+    aspect-ratio: 4 / 3;
+  }
+
+  .tile h3 {
+    font-size: clamp(30px, 9vw, 44px);
+  }
 
   .gallery-page {
     padding-top: 96px;
@@ -436,47 +407,28 @@ h1 {
   }
 
   .contact-section {
-  min-height: auto;
-  padding: 80px 24px 54px;
-  grid-template-columns: 1fr;
-  align-items: start;
-  gap: 42px;
-}
+    min-height: auto;
+    padding: 80px 24px 54px;
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 42px;
+  }
 
-.contact-copy {
-  min-height: 300px;
-}
+  .contact-copy {
+    min-height: 300px;
+  }
 
-.contact-section h2 {
-  font-size: clamp(38px, 11vw, 58px);
-}
+  .contact-section h2 {
+    font-size: clamp(38px, 11vw, 58px);
+  }
 
-.contact-links {
-  align-items: flex-start;
-  gap: 14px;
-}
+  .contact-links {
+    align-items: flex-start;
+    gap: 14px;
+  }
 
-.copyright {
-  margin: 0;
-  font-size: 14px;
-}
-
-  .site-footer {
-  min-height: 110px;
-  padding: 30px 24px 34px;
-
-  grid-template-columns: 1fr;
-  align-items: start;
-  gap: 18px;
-}
-
-.footer-links {
-  align-items: flex-start;
-}
-
-.instagram-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
+  .copyright {
+    margin: 0;
+    font-size: 14px;
+  }
 }
