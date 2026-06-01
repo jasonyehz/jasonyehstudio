@@ -274,12 +274,13 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
+  align-items: start;
 }
 
 .photo-gallery img {
   width: 100%;
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
+  height: auto;
+  display: block;
   background: #ddd;
 }
 
@@ -450,8 +451,7 @@ h1 {
 
 .photo-gallery img {
   width: 100%;
-  aspect-ratio: 3 / 2;
-  object-fit: cover;
+  height: auto;
 }
 
   .page-arrows {
