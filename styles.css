@@ -315,22 +315,19 @@ h1 {
 
 /* Contact */
 
-/* Contact */
-
 .contact-section {
-  padding: 64px 46px 42px;
+  padding: 58px 46px 42px;
   background: #e8e2d6;
 }
 
 .contact-note {
-  margin: 0 0 80px;
-
-  max-width: 620px;
+  margin: 0 0 58px;
+  text-align: center;
 
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(28px, 3vw, 46px);
-  line-height: 1.08;
-  letter-spacing: -0.04em;
+  font-size: clamp(24px, 2.4vw, 38px);
+  line-height: 1.1;
+  letter-spacing: -0.035em;
 }
 
 .contact-bottom {
@@ -527,27 +524,23 @@ h1 {
   }
 
   .contact-section {
-  min-height: auto;
-  padding: 80px 24px 54px;
-
-  grid-template-columns: 1fr;
-  align-items: start;
-  gap: 34px;
+  padding: 52px 24px 38px;
 }
 
-.contact-copy {
-  min-height: auto;
-  display: contents;
+.contact-note {
+  margin: 0 0 42px;
+  text-align: left;
+  font-size: clamp(26px, 8vw, 38px);
 }
 
-.contact-section h2 {
-  font-size: clamp(38px, 11vw, 58px);
+.contact-bottom {
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  gap: 28px;
 }
 
 .contact-links {
   align-items: flex-start;
-  gap: 14px;
-  order: 2;
 }
 
 .copyright {
