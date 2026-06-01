@@ -235,39 +235,43 @@ h1 {
 
 /* Individual gallery pages */
 
-.gallery-page {
-  padding-top: 104px;
+.gallery-hero {
+  width: min(94vw, 1800px);
+  margin: 0 auto;
+  padding: 70px 0 64px;
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
 }
 
-.gallery-hero {
-  max-width: 850px;
-  margin: 0 auto;
-  padding: 20px 34px 56px;
+.gallery-back {
+  justify-self: start;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 2.6vw, 40px);
+  line-height: 1;
+}
+
+.gallery-title {
+  grid-column: 2;
   text-align: center;
 }
 
-.gallery-hero .label {
+.gallery-title .label {
   margin: 0 0 14px;
   font-size: 14px;
   letter-spacing: 0.08em;
 }
 
-.gallery-hero h1 {
+.gallery-title h1 {
   font-size: clamp(42px, 5vw, 72px);
   line-height: 1;
   letter-spacing: -0.055em;
 }
 
-.gallery-hero p:not(.label) {
-  max-width: 520px;
-  margin: 18px auto 0;
-  color: #504c46;
-  line-height: 1.7;
-  font-size: 15px;
+.gallery-back:hover {
+  opacity: 0.55;
 }
 
 /* Masonry gallery */
@@ -290,23 +294,9 @@ h1 {
   background: #ddd;
 }
 
-.gallery-back,
 .page-arrows {
   width: min(94vw, 1800px);
   margin: 0 auto;
-}
-
-.gallery-back {
-  padding: 44px 0 34px;
-}
-
-.gallery-back a {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(30px, 3vw, 46px);
-  line-height: 1;
-}
-
-.page-arrows {
   padding: 16px 0 90px;
 
   display: flex;
@@ -314,8 +304,8 @@ h1 {
   gap: 28px;
 
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(30px, 3vw, 46px);
-  letter-spacing: -0.045em;
+  font-size: clamp(24px, 2.4vw, 36px);
+  letter-spacing: -0.04em;
 }
 
 .gallery-back a:hover,
