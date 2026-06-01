@@ -51,7 +51,7 @@ img {
 nav {
   position: absolute;
   left: 100%;
-  transform: translateX(-50%);
+  transform: translateX(0%);
 
   display: flex;
   gap: 34px;
