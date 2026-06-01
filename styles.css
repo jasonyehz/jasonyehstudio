@@ -290,18 +290,37 @@ h1 {
   background: #ddd;
 }
 
+.gallery-back,
 .page-arrows {
-  max-width: 1240px;
+  width: min(94vw, 1800px);
   margin: 0 auto;
-  padding: 10px 34px 110px;
+}
+
+.gallery-back {
+  padding: 0 0 34px;
+}
+
+.gallery-back a {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(30px, 3vw, 46px);
+  line-height: 1;
+}
+
+.page-arrows {
+  padding: 16px 0 90px;
 
   display: flex;
   justify-content: space-between;
   gap: 28px;
 
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(20px, 4vw, 56px);
-  letter-spacing: -0.05em;
+  font-size: clamp(30px, 3vw, 46px);
+  letter-spacing: -0.045em;
+}
+
+.gallery-back a:hover,
+.page-arrows a:hover {
+  opacity: 0.55;
 }
 
 /* Contact */
@@ -498,6 +517,19 @@ h1 {
     columns: 2;
     column-gap: 12px;
   }
+
+  .gallery-back,
+    .page-arrows {
+      width: calc(100vw - 32px);
+    }
+
+  .gallery-back {
+    padding: 0 0 24px;
+    }
+
+    .gallery-back a {
+      font-size: 34px;
+    }
 
   .photo-gallery img {
     width: 100%;
