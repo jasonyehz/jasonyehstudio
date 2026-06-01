@@ -236,19 +236,24 @@ h1 {
 /* Individual gallery pages */
 
 .gallery-page {
-  padding-top: 108px;
+  padding-top: 104px;
 }
 
 .gallery-hero {
-  min-height: auto;
   max-width: 850px;
   margin: 0 auto;
-  padding: 64px 34px 56px;
+  padding: 58px 34px 52px;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+
+.gallery-hero .label {
+  margin: 0 0 14px;
+  font-size: 14px;
+  letter-spacing: 0.08em;
 }
 
 .gallery-hero h1 {
