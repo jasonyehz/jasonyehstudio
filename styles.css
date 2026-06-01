@@ -80,18 +80,19 @@ nav a:hover,
 }
 
 .home-photo {
-  height: 68vh;
-  max-height: 680px;
-  min-height: 420px;
+  width: min(42vw, 620px);
+  aspect-ratio: 1 / 1;
 
   overflow: hidden;
   background: #ddd;
+  justify-self: center;
 }
 
 .home-photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
 
 .home-intro {
@@ -300,6 +301,8 @@ h1 {
 
 /* Contact */
 
+/* Contact */
+
 .contact-section {
   min-height: 58vh;
   margin: 0;
@@ -314,11 +317,10 @@ h1 {
 }
 
 .contact-copy {
-  min-height: 330px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 330px;
 }
 
 .contact-section h2 {
@@ -352,6 +354,10 @@ h1 {
   padding-bottom: 3px;
 
   font-size: 16px;
+}
+
+.contact-links a:hover {
+  opacity: 0.55;
 }
 
 /* Medium */
@@ -401,9 +407,12 @@ h1 {
   }
 
   .home-photo {
-    height: 52vh;
-    min-height: 340px;
-  }
+  width: 100%;
+  max-width: 520px;
+  aspect-ratio: 1 / 1;
+  min-height: 0;
+  height: auto;
+}
 
   .home-intro {
     padding: 28px 12px 40px;
@@ -465,29 +474,29 @@ h1 {
   }
 
   .contact-section {
-    min-height: auto;
-    padding: 80px 24px 54px;
+  min-height: auto;
+  padding: 80px 24px 54px;
 
-    grid-template-columns: 1fr;
-    align-items: start;
-    gap: 42px;
-  }
+  grid-template-columns: 1fr;
+  align-items: start;
+  gap: 42px;
+}
 
-  .contact-copy {
-    min-height: 300px;
-  }
+.contact-copy {
+  min-height: 300px;
+}
 
-  .contact-section h2 {
-    font-size: clamp(38px, 11vw, 58px);
-  }
+.contact-section h2 {
+  font-size: clamp(38px, 11vw, 58px);
+}
 
-  .contact-links {
-    align-items: flex-start;
-    gap: 14px;
-  }
+.contact-links {
+  align-items: flex-start;
+  gap: 14px;
+}
 
-  .copyright {
-    margin: 0;
-    font-size: 14px;
-  }
+.copyright {
+  margin: 0;
+  font-size: 14px;
+}
 }
