@@ -243,7 +243,7 @@ h1 {
   min-height: auto;
   max-width: 850px;
   margin: 0 auto;
-  padding: 90px 34px 70px;
+  padding: 70px 34px 60px;
 
   display: flex;
   flex-direction: column;
@@ -259,11 +259,10 @@ h1 {
 
 .gallery-hero p:not(.label) {
   max-width: 520px;
-  margin: 24px auto 0;
-
+  margin: 18px auto 0;
   color: #504c46;
-  font-size: 15px;
   line-height: 1.7;
+  font-size: 15px;
 }
 
 .photo-gallery {
@@ -432,13 +431,13 @@ h1 {
   }
 
   .gallery-page {
-    padding-top: 96px;
-  }
+  padding-top: 96px;
+}
 
-  .gallery-hero {
-    min-height: 42vh;
-    padding: 90px 24px 54px;
-  }
+.gallery-hero {
+  min-height: auto;
+  padding: 56px 24px 42px;
+}
 
   .photo-gallery {
     width: calc(100vw - 32px);
