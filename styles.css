@@ -143,11 +143,7 @@ h1 {
   letter-spacing: -0.06em;
 }
 
-/* 
-  6-column system:
-  each tile spans 2 columns = 3 tiles per row.
-  Last row is centered by placing tile 4 at columns 2-3 and tile 5 at columns 4-5.
-*/
+/* Homepage portfolio tile grid */
 
 .portfolio-grid {
   width: 92vw;
@@ -243,7 +239,7 @@ h1 {
   min-height: auto;
   max-width: 850px;
   margin: 0 auto;
-  padding: 70px 34px 60px;
+  padding: 64px 34px 56px;
 
   display: flex;
   flex-direction: column;
@@ -264,6 +260,8 @@ h1 {
   line-height: 1.7;
   font-size: 15px;
 }
+
+/* Masonry gallery */
 
 .photo-gallery {
   width: min(94vw, 1800px);
@@ -431,13 +429,13 @@ h1 {
   }
 
   .gallery-page {
-  padding-top: 96px;
-}
+    padding-top: 96px;
+  }
 
-.gallery-hero {
-  min-height: auto;
-  padding: 56px 24px 42px;
-}
+  .gallery-hero {
+    min-height: auto;
+    padding: 56px 24px 42px;
+  }
 
   .photo-gallery {
     width: calc(100vw - 32px);
@@ -454,7 +452,6 @@ h1 {
     margin-bottom: 12px;
     break-inside: avoid;
   }
-}
 
   .page-arrows {
     padding: 0 22px 80px;
