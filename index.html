@@ -14,18 +14,6 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 
-<script>
-  window.addEventListener("load", function () {
-    const navEntry = performance.getEntriesByType("navigation")[0];
-    const isReload = navEntry && navEntry.type === "reload";
-
-    if (isReload && window.location.hash) {
-      history.replaceState(null, "", "/");
-      window.scrollTo(0, 0);
-    }
-  });
-</script>
-
 <body>
   <header class="site-header">
     <a class="brand" href="/">Jason Yeh</a>
@@ -101,5 +89,16 @@
   </div>
 </section>
   </main>
+  <script>
+  window.addEventListener("load", function () {
+    const navEntry = performance.getEntriesByType("navigation")[0];
+    const isReload = navEntry && navEntry.type === "reload";
+
+    if (isReload && window.location.hash) {
+      history.replaceState(null, "", "/");
+      window.scrollTo(0, 0);
+    }
+  });
+</script>
 </body>
 </html>

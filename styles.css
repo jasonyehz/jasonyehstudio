@@ -141,6 +141,9 @@ h1 {
   max-width: 440px;
   margin: 26px auto 36px;
 
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+
   color: #504c46;
   font-size: 15px;
   line-height: 1.7;
@@ -490,8 +493,8 @@ nav {
   }
 
   .home-intro h1 {
-  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
-  font-weight: 600;
+  font-family: "Josefin Slab", Georgia, "Times New Roman", serif;
+  font-weight: 700;
   letter-spacing: -0.045em;
 }
 
