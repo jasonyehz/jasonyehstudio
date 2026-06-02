@@ -365,10 +365,11 @@ h1 {
   margin: 0 0 58px;
   text-align: center;
 
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(24px, 2.4vw, 38px);
-  line-height: 1.1;
-  letter-spacing: -0.035em;
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: clamp(20px, 1.6vw, 28px);
+  line-height: 1.35;
+  letter-spacing: 0;
 }
 
 .contact-bottom {
@@ -381,6 +382,9 @@ h1 {
 .copyright {
   margin: 0;
   color: #504c46;
+
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
   font-size: 14px;
 }
 
@@ -392,6 +396,9 @@ h1 {
 }
 
 .contact-links a {
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+
   color: #171717;
   border-bottom: 1px solid currentColor;
   padding-bottom: 3px;
@@ -414,10 +421,10 @@ h1 {
   gap: 32px;
 }
 
-.gallery-footer p {
-  margin: 0;
-  color: #504c46;
-  font-size: 14px;
+.gallery-footer p,
+.gallery-footer-links a {
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
 }
 
 .gallery-footer-links {
@@ -613,9 +620,14 @@ nav {
 }
 
 .contact-note {
-  margin: 0 0 42px;
-  text-align: left;
-  font-size: clamp(26px, 8vw, 38px);
+  margin: 0 0 58px;
+  text-align: center;
+
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: clamp(20px, 1.6vw, 28px);
+  line-height: 1.35;
+  letter-spacing: 0;
 }
 
 .contact-bottom {
