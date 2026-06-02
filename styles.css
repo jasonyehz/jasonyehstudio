@@ -412,6 +412,10 @@ h1 {
   opacity: 0.55;
 }
 
+.photo-gallery-mobile {
+  display: none;
+}
+
 /* Medium */
 
 @media (max-width: 1100px) {
@@ -602,10 +606,6 @@ nav {
 }
 
 /* Mobile-specific curated gallery */
-
-.photo-gallery-mobile {
-  display: none;
-}
 
 @media (max-width: 850px) {
   .photo-gallery-desktop {
