@@ -236,17 +236,7 @@ h1 {
 /* Individual gallery pages */
 
 .gallery-page {
-  padding-top: 104px;
-}
-
-.gallery-hero {
-  width: min(94vw, 1800px);
-  margin: 0 auto;
-  padding: 110px 0 64px;
-
-  display: grid;
-  grid-template-columns: 44px 1fr 44px;
-  align-items: center;
+  padding-top: 42px;
 }
 
 .gallery-hero {
@@ -495,7 +485,7 @@ h1 {
   }
 
   .gallery-page {
-  padding-top: 96px;
+  padding-top: 48px;
 }
 
 .gallery-hero {
