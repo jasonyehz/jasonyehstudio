@@ -53,8 +53,8 @@ img {
 
   font-family: "DM Serif Display", Georgia, "Times New Roman", serif;
   font-weight: 400;
-  font-size: 34px;
-  letter-spacing: -0.04em;
+  font-size: 42px;
+  letter-spacing: -0.02em;
   color: #f4f2ec;
 
   white-space: nowrap;
@@ -123,9 +123,15 @@ nav a:hover,
   text-align: center;
 }
 
+h1 {
+  font-size: clamp(54px, 7vw, 104px);
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
 .home-intro h1 {
   font-family: "Josefin Slab", Georgia, "Times New Roman", serif;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.045em;
 }
 
@@ -147,12 +153,6 @@ h3 {
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
   font-weight: 400;
-}
-
-h1 {
-  font-size: clamp(54px, 7vw, 104px);
-  line-height: 0.95;
-  letter-spacing: -0.06em;
 }
 
 .intro-text {
@@ -366,8 +366,8 @@ h1 {
   text-align: center;
 
   font-family: "Work Sans", Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: clamp(20px, 1.6vw, 28px);
+  font-weight: 500;
+  font-size: clamp(30px, 1.6vw, 28px);
   line-height: 1.35;
   letter-spacing: 0;
 }
