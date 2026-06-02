@@ -253,7 +253,7 @@ h1 {
   justify-self: start;
 
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(20px, 2.6vw, 40px);
+  font-size: clamp(20px, 2.6vw, 36px);
   line-height: 1;
 }
 
@@ -501,7 +501,7 @@ h1 {
   grid-column: 1;
   justify-self: start;
 
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1;
 }
 
