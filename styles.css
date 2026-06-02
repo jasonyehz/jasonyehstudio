@@ -280,16 +280,22 @@ h1 {
 }
 
 /* Masonry gallery */
-
 .photo-gallery {
   width: min(94vw, 1800px);
   margin: 0 auto;
   padding: 0 0 100px;
 
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 28px;
   align-items: start;
+}
+
+.photo-gallery-desktop {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.photo-gallery-mobile {
+  display: none;
 }
 
 .gallery-column {
@@ -302,10 +308,8 @@ h1 {
   width: 100%;
   height: auto;
   display: block;
-
   margin: 0;
   padding: 0;
-
   background: #ddd;
 }
 
@@ -537,11 +541,16 @@ nav {
 }
 
 @media (max-width: 850px) {
-  .photo-gallery {
+  .photo-gallery-desktop {
+    display: none;
+  }
+
+  .photo-gallery-mobile {
     width: calc(100vw - 32px);
     padding: 0 0 70px;
 
-    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
   }
 
