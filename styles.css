@@ -600,4 +600,41 @@ nav {
 .gallery-footer-links a {
   font-size: 13px;
 }
+
+/* Mobile-specific curated gallery */
+
+.photo-gallery-mobile {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .photo-gallery-desktop {
+    display: none;
+  }
+
+  .photo-gallery-mobile {
+    width: calc(100vw - 32px);
+    margin: 0 auto;
+    padding: 0 0 70px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    align-items: start;
+  }
+
+  .photo-gallery-mobile .gallery-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .photo-gallery-mobile img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+}
 }
