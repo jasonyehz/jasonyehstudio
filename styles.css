@@ -49,13 +49,15 @@ img {
 }
 
 nav {
+  position: absolute;
+  left: 90%;
+  transform: translateX(-50%);
+
   display: flex;
-  align-items: center;
   gap: 34px;
 
   color: #f4f2ec;
   font-size: 15px;
-  line-height: 1;
   letter-spacing: 0.03em;
 }
 
