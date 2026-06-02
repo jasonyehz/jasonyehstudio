@@ -286,26 +286,24 @@ h1 {
   margin: 0 auto;
   padding: 0 0 100px;
 
-  columns: 3 320px;
-  column-gap: 28px;
-  column-fill: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  align-items: start;
 }
 
-.photo-gallery figure {
-  display: block;
-  margin: 0 0 28px;
-  padding: 0;
-
-  break-inside: avoid;
-  page-break-inside: avoid;
+.gallery-column {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 
 .photo-gallery img {
   width: 100%;
   height: auto;
   display: block;
-  margin: 0 0 28px;
-  break-inside: avoid;
+  margin: 0;
+  padding: 0;
   background: #ddd;
 }
 
@@ -536,20 +534,18 @@ nav {
   font-size: clamp(36px, 11vw, 52px);
 }
 
-.photo-gallery {
-  width: calc(100vw - 32px);
-  padding: 0 0 70px;
+@media (max-width: 850px) {
+  .photo-gallery {
+    width: calc(100vw - 32px);
+    padding: 0 0 70px;
 
-  columns: 2;
-  column-gap: 12px;
-}
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
 
-.photo-gallery img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 12px;
-  break-inside: avoid;
+  .gallery-column {
+    gap: 12px;
+  }
 }
 
 .page-arrows {
