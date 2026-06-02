@@ -249,7 +249,7 @@ h1 {
   justify-self: start;
 
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(24px, 2.6vw, 40px);
+  font-size: clamp(20px, 2.6vw, 40px);
   line-height: 1;
 }
 
