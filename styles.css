@@ -437,7 +437,7 @@ h1 {
 
 @media (max-width: 850px) {
   .site-header {
-  padding: 24px 28px;
+  padding: 24px 24px;
 
   display: flex;
   align-items: center;
