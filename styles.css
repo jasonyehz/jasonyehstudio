@@ -423,7 +423,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 16px;
+  gap: 12px;
 
   font-size: 14px;
   line-height: 1;
@@ -432,7 +432,7 @@ h1 {
   .home {
     grid-template-columns: 1fr;
     gap: 34px;
-    padding: 110px 22px 42px;
+    padding: 110px 22px 36px;
   }
 
   .home-photo {
