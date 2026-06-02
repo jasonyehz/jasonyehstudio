@@ -259,7 +259,7 @@ h1 {
 }
 
 .gallery-title .label {
-  margin: 40px 0 14px;
+  margin: 42px 0 14px;
   font-size: 14px;
   letter-spacing: 0.08em;
 }
@@ -486,7 +486,7 @@ h1 {
 
 .gallery-hero {
   width: calc(100vw - 32px);
-  padding: 44px 0 38px;
+  padding: 36px 0 38px;
 
   display: grid;
   grid-template-columns: 44px 1fr 44px;
