@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
 }
@@ -50,7 +51,8 @@ img {
 .brand {
   grid-column: 1;
 
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Josefin Slab", Georgia, "Times New Roman", serif;
+  font-weight: 700;
   font-size: 34px;
   letter-spacing: -0.04em;
   color: #f4f2ec;
@@ -64,6 +66,9 @@ nav {
   display: flex;
   align-items: center;
   gap: 34px;
+
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-weight: 500;
 
   color: #f4f2ec;
   font-size: 15px;
@@ -484,6 +489,12 @@ nav {
     padding: 28px 12px 34px;
   }
 
+  .home-intro h1 {
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+}
+
   .portfolio-section {
     padding: 34px 22px 80px;
   }
@@ -502,8 +513,22 @@ nav {
   }
 
   .tile h3 {
-    font-size: clamp(30px, 9vw, 44px);
-  }
+  position: absolute;
+  inset: 0;
+
+  display: grid;
+  place-items: center;
+
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+
+  color: #f8f5ed;
+  font-size: clamp(26px, 2.2vw, 42px);
+  letter-spacing: -0.035em;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.28);
+
+  transition: transform 350ms ease, text-shadow 350ms ease;
+}
 
   .gallery-page {
   padding-top: 80px;
