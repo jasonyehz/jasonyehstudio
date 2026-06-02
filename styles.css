@@ -51,8 +51,8 @@ img {
 .brand {
   grid-column: 1;
 
-  font-family: "Josefin Slab", Georgia, "Times New Roman", serif;
-  font-weight: 700;
+  font-family: "DM Serif Display", Georgia, "Times New Roman", serif;
+  font-weight: 400;
   font-size: 34px;
   letter-spacing: -0.04em;
   color: #f4f2ec;
@@ -121,6 +121,24 @@ nav a:hover,
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+
+.home-intro h1 {
+  font-family: "Josefin Slab", Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+}
+
+.intro-text {
+  max-width: 440px;
+  margin: 26px auto 36px;
+
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+
+  color: #504c46;
+  font-size: 15px;
+  line-height: 1.7;
 }
 
 h1,
@@ -494,7 +512,7 @@ nav {
 
   .home-intro h1 {
   font-family: "Josefin Slab", Georgia, "Times New Roman", serif;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: -0.045em;
 }
 
