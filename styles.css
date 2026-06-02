@@ -432,7 +432,7 @@ h1 {
   .home {
     grid-template-columns: 1fr;
     gap: 34px;
-    padding: 110px 22px 64px;
+    padding: 110px 22px 48px;
   }
 
   .home-photo {
