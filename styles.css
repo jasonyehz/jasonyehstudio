@@ -286,16 +286,20 @@ h1 {
   margin: 0 auto;
   padding: 0 0 100px;
 
-  columns: 3 320px;
-  column-gap: 28px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  align-items: start;
 }
 
 .photo-gallery img {
   width: 100%;
   height: auto;
   display: block;
-  margin-bottom: 28px;
-  break-inside: avoid;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
   background: #ddd;
 }
 
