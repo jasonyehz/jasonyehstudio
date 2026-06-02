@@ -16,8 +16,8 @@
     <a class="brand" href="/">Jason Yeh</a>
 
     <nav>
-      <a href="/gallery" data-scroll-target="gallery-tiles">Gallery</a>
-      <a href="#contact">Contact</a>
+      <a href="/#gallery" data-scroll-target="gallery">Gallery</a>
+      <a href="/#contact">Contact</a>
     </nav>
   </header>
 
@@ -86,30 +86,5 @@
   </div>
 </section>
   </main>
-  <script>
-  function scrollToGallery() {
-    const gallery = document.getElementById("gallery-tiles");
-    if (!gallery) return;
-
-    gallery.scrollIntoView({
-      behavior: "auto",
-      block: "start"
-    });
-  }
-
-  window.addEventListener("load", function () {
-    if (window.location.pathname === "/gallery" || window.location.pathname === "/gallery/") {
-      setTimeout(scrollToGallery, 100);
-    }
-  });
-
-  document.querySelectorAll('[data-scroll-target="gallery-tiles"]').forEach(function (link) {
-    link.addEventListener("click", function (event) {
-      event.preventDefault();
-      history.pushState(null, "", "/gallery");
-      scrollToGallery();
-    });
-  });
-</script>
 </body>
 </html>
