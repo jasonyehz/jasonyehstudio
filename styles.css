@@ -37,7 +37,7 @@ img {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  column-gap: 80px;
+  column-gap: 100px;
 
   background: rgba(48, 45, 39, 0.96);
   backdrop-filter: blur(12px);
@@ -457,7 +457,7 @@ nav {
 }
 
   .home-intro {
-    padding: 28px 12px 40px;
+    padding: 28px 12px 34px;
   }
 
   .portfolio-section {
