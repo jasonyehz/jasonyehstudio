@@ -11,6 +11,32 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 
+<script>
+  function scrollToGallery() {
+    const gallery = document.getElementById("gallery-tiles");
+    if (!gallery) return;
+
+    gallery.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }
+
+  document.querySelectorAll('[data-scroll-target="gallery-tiles"]').forEach((link) => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      history.pushState(null, "", "/gallery");
+      scrollToGallery();
+    });
+  });
+
+  window.addEventListener("load", function () {
+    if (window.location.pathname === "/gallery") {
+      setTimeout(scrollToGallery, 50);
+    }
+  });
+</script>
+
 <body>
   <header class="site-header">
     <a class="brand" href="/">Jason Yeh</a>
