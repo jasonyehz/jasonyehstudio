@@ -288,6 +288,16 @@ h1 {
 
   columns: 3 320px;
   column-gap: 28px;
+  column-fill: auto;
+}
+
+.photo-gallery figure {
+  display: block;
+  margin: 0 0 28px;
+  padding: 0;
+
+  break-inside: avoid;
+  page-break-inside: avoid;
 }
 
 .photo-gallery img {
