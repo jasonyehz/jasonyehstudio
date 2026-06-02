@@ -136,17 +136,6 @@ h1 {
   padding: 42px 4vw 120px;
 }
 
-.portfolio-title {
-  padding: 48px 0 110px;
-  text-align: center;
-}
-
-.portfolio-title h2 {
-  font-size: clamp(44px, 5vw, 72px);
-  font-weight: 400;
-  letter-spacing: -0.06em;
-}
-
 /* Homepage portfolio tile grid */
 
 .portfolio-grid {
@@ -434,7 +423,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 18px;
+  gap: 12px;
 
   font-size: 14px;
   line-height: 1;
@@ -460,10 +449,6 @@ h1 {
 
   .portfolio-section {
     padding: 34px 22px 80px;
-  }
-
-  .portfolio-title {
-    padding: 34px 0 80px;
   }
 
   .portfolio-grid {
