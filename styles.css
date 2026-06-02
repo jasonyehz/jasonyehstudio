@@ -437,7 +437,7 @@ h1 {
 
 @media (max-width: 850px) {
   .site-header {
-  padding: 24px 38px;
+  padding: 24px 30px;
 
   display: flex;
   align-items: center;
@@ -507,7 +507,7 @@ nav {
 
 .gallery-hero {
   width: calc(100vw - 32px);
-  padding: 50px 0 34px;
+  padding: 30px 0 34px;
 
   display: grid;
   grid-template-columns: 44px 1fr 44px;
