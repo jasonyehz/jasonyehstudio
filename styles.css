@@ -291,6 +291,10 @@ h1 {
 }
 
 .photo-gallery img {
+  outline: 3px solid red;
+}
+
+.photo-gallery img {
   width: 100%;
   height: auto;
   display: block;
