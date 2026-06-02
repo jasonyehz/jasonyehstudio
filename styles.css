@@ -7,7 +7,7 @@ html {
 }
 
 #gallery-tiles {
-  scroll-margin-top: 105px;
+  scroll-margin-top: 120px;
 }
 
 body {
@@ -418,6 +418,12 @@ h1 {
 }
 
 /* Mobile */
+
+@media (max-width: 850px) {
+  #gallery-tiles {
+    scroll-margin-top: 105px;
+  }
+}
 
 @media (max-width: 850px) {
   .site-header {
