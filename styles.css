@@ -490,7 +490,7 @@ h1 {
 
 .gallery-hero {
   width: calc(100vw - 32px);
-  padding: 36px 0 38px;
+  padding: 50px 0 34px;
 
   display: grid;
   grid-template-columns: 44px 1fr 44px;
