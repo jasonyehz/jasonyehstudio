@@ -6,7 +6,7 @@ html {
   scroll-behavior: smooth;
 }
 
-#gallery-tiles {
+#gallery {
   scroll-margin-top: 132px;
 }
 
@@ -264,7 +264,7 @@ h1 {
 }
 
 .gallery-title .label {
-  margin: 42px 0 14px;
+  margin: 46px 0 14px;
   font-size: 14px;
   letter-spacing: 0.08em;
 }
@@ -434,7 +434,7 @@ h1 {
 /* Mobile */
 
 @media (max-width: 850px) {
-  #gallery-tiles {
+  #gallery {
     scroll-margin-top: 105px;
   }
 }
@@ -459,7 +459,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 14px;
+  gap: 20px;
 
   font-size: 13px;
   line-height: 1;
