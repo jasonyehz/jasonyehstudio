@@ -68,7 +68,7 @@ nav {
   gap: 34px;
 
   font-family: "Work Sans", Arial, Helvetica, sans-serif;
-  font-weight: 500;
+  font-weight: 450;
 
   color: #f4f2ec;
   font-size: 20px;
@@ -281,19 +281,19 @@ h3 {
 }
 
 .gallery-title .label {
-  margin: 0 0 8px;
+  margin: 46px 0 14px;
 
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   font-weight: 400;
 
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 0.08em;
 }
 
 .gallery-title h1 {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   font-weight: 400;
-  font-size: clamp(36px, 11vw, 52px);
+  font-size: clamp(42px, 5vw, 72px);
   line-height: 1;
   letter-spacing: -0.055em;
 }
@@ -363,7 +363,7 @@ h3 {
   text-align: center;
 
   font-family: "Work Sans", Arial, Helvetica, sans-serif;
-  font-weight: 450;
+  font-weight: 400;
   font-size: clamp(22px, 1.6vw, 32px);
   line-height: 1.35;
   letter-spacing: 0;
@@ -575,6 +575,20 @@ nav {
   transform: translateY(-32px);
 }
 
+.gallery-title {
+  grid-column: 2;
+  text-align: center;
+}
+
+.gallery-title .label {
+  margin: 0 0 8px;
+  font-size: 12px;
+}
+
+.gallery-title h1 {
+  font-size: clamp(36px, 11vw, 52px);
+}
+
 @media (max-width: 850px) {
   .photo-gallery {
     width: calc(100vw - 32px);
@@ -604,7 +618,7 @@ nav {
   text-align: center;
 
   font-family: "Work Sans", Arial, Helvetica, sans-serif;
-  font-weight: 450;
+  font-weight: 400;
   font-size: clamp(20px, 1.6vw, 30px);
   line-height: 1.35;
   letter-spacing: 0;
