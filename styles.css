@@ -295,7 +295,7 @@ h3 {
   font-weight: 500;
   font-size: clamp(42px, 5vw, 72px);
   line-height: 1;
-  letter-spacing: -0.055em;
+  letter-spacing: -0.03em;
 }
 
 .gallery-back:hover {
