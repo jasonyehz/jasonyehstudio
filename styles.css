@@ -292,7 +292,7 @@ h3 {
 
 .gallery-title h1 {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
-  font-weight: 450;
+  font-weight: 400;
   font-size: clamp(42px, 5vw, 72px);
   line-height: 1;
   letter-spacing: -0.055em;
