@@ -281,19 +281,19 @@ h3 {
 }
 
 .gallery-title .label {
-  margin: 46px 0 14px;
+  margin: 0 0 8px;
 
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   font-weight: 400;
 
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 0.08em;
 }
 
 .gallery-title h1 {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   font-weight: 400;
-  font-size: clamp(42px, 5vw, 72px);
+  font-size: clamp(36px, 11vw, 52px);
   line-height: 1;
   letter-spacing: -0.055em;
 }
@@ -573,20 +573,6 @@ nav {
   line-height: 1;
 
   transform: translateY(-32px);
-}
-
-.gallery-title {
-  grid-column: 2;
-  text-align: center;
-}
-
-.gallery-title .label {
-  margin: 0 0 8px;
-  font-size: 12px;
-}
-
-.gallery-title h1 {
-  font-size: clamp(36px, 11vw, 52px);
 }
 
 @media (max-width: 850px) {
