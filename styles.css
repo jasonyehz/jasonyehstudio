@@ -155,18 +155,6 @@ h3 {
   font-weight: 400;
 }
 
-.intro-text {
-  max-width: 440px;
-  margin: 26px auto 36px;
-
-  font-family: "Work Sans", Arial, Helvetica, sans-serif;
-  font-weight: 400;
-
-  color: #504c46;
-  font-size: 15px;
-  line-height: 1.7;
-}
-
 /* Gallery section */
 
 .portfolio-section {
@@ -294,11 +282,16 @@ h3 {
 
 .gallery-title .label {
   margin: 46px 0 14px;
+
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+
   font-size: 14px;
   letter-spacing: 0.08em;
 }
 
 .gallery-title h1 {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
   font-size: clamp(42px, 5vw, 72px);
   line-height: 1;
   letter-spacing: -0.055em;
@@ -370,7 +363,7 @@ h3 {
 
   font-family: "Work Sans", Arial, Helvetica, sans-serif;
   font-weight: 400;
-  font-size: clamp(30px, 1.6vw, 28px);
+  font-size: clamp(22px, 1.6vw, 30px);
   line-height: 1.35;
   letter-spacing: 0;
 }
@@ -484,6 +477,9 @@ h3 {
 }
 
 .brand {
+  font-family: "DM Serif Display", Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  
   font-size: 32px;
   line-height: 1;
   white-space: nowrap;
@@ -519,12 +515,6 @@ nav {
   .home-intro {
     padding: 28px 12px 34px;
   }
-
-  .home-intro h1 {
-  font-family: "Raleway", Arial, Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  letter-spacing: -0.045em;
-}
 
   .portfolio-section {
     padding: 34px 22px 80px;
