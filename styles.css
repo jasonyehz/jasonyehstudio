@@ -273,6 +273,7 @@ h3 {
   font-family: "Work Sans", Arial, Helvetica, sans-serif;
   font-size: clamp(18px, 2vw, 32px);
   line-height: 1;
+  letter-spacing: 0.3em;
 }
 
 .gallery-title {
