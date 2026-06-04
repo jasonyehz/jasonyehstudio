@@ -400,10 +400,9 @@ h3 {
 }
 
 .copyright {
-  order: 2;
+  position: absolute;
+  left: 0;
   margin: 0;
-  width: 100%;
-  text-align: center;
 
   color: #504c46;
   font-family: "Work Sans", Arial, Helvetica, sans-serif;
@@ -634,14 +633,16 @@ nav {
 .contact-bottom {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 28px;
+  align-items: center;
+  gap: 22px;
 }
 
 .contact-links {
-  order: 1;
-  align-items: flex-start;
-  gap: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
 }
 
 .copyright {
