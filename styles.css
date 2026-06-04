@@ -360,7 +360,7 @@ h3 {
 }
 
 .contact-note {
-  margin: 0 0 45px;
+  margin: 0 0 36px;
   text-align: center;
 
   font-family: "Work Sans", Arial, Helvetica, sans-serif;
@@ -404,6 +404,7 @@ h3 {
   margin: 0;
   width: 100%;
   text-align: center;
+  align-items: flex-end;
 
   color: #504c46;
   font-family: "Work Sans", Arial, Helvetica, sans-serif;
@@ -639,7 +640,7 @@ nav {
 }
 
 .contact-links {
-  order: 1;
+  order: 2;
   align-items: flex-start;
   gap: 14px;
 }
