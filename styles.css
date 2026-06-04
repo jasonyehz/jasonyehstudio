@@ -536,6 +536,7 @@ nav {
     grid-template-columns: 1fr;
     gap: 34px;
     padding: 110px 22px 0;
+    margin-bottom: 60px;
   }
 
   .home-photo {
