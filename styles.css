@@ -159,7 +159,7 @@ h3 {
 
 .portfolio-section {
   min-height: auto;
-  padding: 42px 4vw 60px;
+  padding: 42px 4vw 75px;
 }
 
 /* Homepage portfolio tile grid */
@@ -404,6 +404,8 @@ h3 {
   font-weight: 400;
   font-size: 14px;
   text-align: center;
+
+  margin-top: 16px;
 }
 
 .contact-links {
@@ -680,6 +682,8 @@ nav {
   margin: 0;
   font-size: 13px;
   text-align: center;
+
+  margin-top: 16px;
 }
 
 .gallery-footer {
