@@ -159,7 +159,7 @@ h3 {
 
 .portfolio-section {
   min-height: auto;
-  padding: 32px 4vw 100px;
+  padding: 36px 4vw 100px;
 }
 
 /* Homepage portfolio tile grid */
@@ -533,7 +533,7 @@ nav {
   .home {
     grid-template-columns: 1fr;
     gap: 34px;
-    padding: 110px 22px 36px;
+    padding: 110px 22px 40px;
   }
 
   .home-photo {
