@@ -87,13 +87,15 @@ nav a:hover,
 /* Home */
 
 .home {
-  min-height: 100vh;
-  padding: 130px 7vw 45px;
+  min-height: auto;
+  padding: 130px 7vw 0;
 
   display: grid;
   grid-template-columns: 0.95fr 1.05fr;
   align-items: center;
   gap: 48px;
+
+  margin-bottom: 100px;
 }
 
 .home-photo {
