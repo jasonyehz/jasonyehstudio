@@ -360,7 +360,7 @@ h3 {
 }
 
 .contact-note {
-  margin: 0 0 50px;
+  margin: 0 0 45px;
   text-align: center;
 
   font-family: "Work Sans", Arial, Helvetica, sans-serif;
@@ -385,15 +385,6 @@ h3 {
   gap: 28px;
 }
 
-.copyright {
-  margin: 0;
-  color: #504c46;
-
-  font-family: "Work Sans", Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-}
-
 .contact-links a {
   font-family: "Work Sans", Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -406,6 +397,18 @@ h3 {
 
 .contact-links a:hover {
   opacity: 0.55;
+}
+
+.copyright {
+  order: 2;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+
+  color: #504c46;
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 /* Compact footer for gallery pages */
